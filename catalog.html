@@ -53,6 +53,9 @@
 
         <ul>
             <li>
+                <a href="index.html"><img src="https://via.placeholder.com/13x10" width="13" height="10"></a>
+            </li>
+            <li>
                 <a href="catalog.html">Каталог</a>
             </li>
             <li>
@@ -67,9 +70,12 @@
 
         <section>
             <p>Фильтр</p>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <legend>Цена:</legend>
-                <input type="text" placeholder="0"> &ndash; <input type="text" placeholder="30000"><br> 
+            <form action="https://echo.htmlacademy.ru/courses" method="get">
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <input type="text" name="min-price" placeholder="0"> &ndash; <input type="text" name="max-price" placeholder="30000">
+                </fieldset>
+                 
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>
