@@ -1,0 +1,261 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-dark-teal: #32425C;
+  --basic-dark-blue: #293449;
+  --basic-light-gray: #F1F5F7;
+  --basic-special-yellow: #FFBF47;
+  --basic-red: #EE3643;
+  --basic-teal: #3BBCE3;
+  --basic-pink: #DC91D8;
+  --basic-light-green: #8ED78F;
+  --basic-light-yellow: #FFC047;
+  --basic-beige: #F9F5F0;
+  --basic-light-beige: #F4F4F4;
+  --basic-green: #63A63E;
+  --basic-gray: #A9A9A9;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-teal);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main-header-logo {
+  background-color: var(--basic-red);
+  width: 108px;
+  height: 18px;
+}
+
+.upper-line {
+  background-color: var(--basic-dark-blue);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.upper-line a {
+  color: var(--basic-white);
+}
+
+.upper-line p {
+  background-color: var(--basic-red);
+  width: 220px;
+  height: 47px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: inset 0px -5px 0px #B52933;
+}
+
+.upper-line-list {
+  list-style: none;
+}
+
+.upper-line-list li:last-child {
+  width: 150px;
+  height: 42px;
+  background-color: var(--basic-green);
+  text-align: center;
+
+}
+
+.main-navigation {
+  background-color: var(--basic-dark-teal);
+  list-style: none;
+}
+
+.contacts h1 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  color:var(--basic-red);
+}
+
+.contacts .contacts-phone {
+  color: var(--basic-red);
+  font-weight: 700;
+  font-size: 21px;
+  background-color: var(--basic-light-gray);
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.phone {
+  width: 270px;
+  height: 45px;
+  border: 3px solid var(--basic-white);
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.contacts-in-button {
+  width: 121px;
+  height: 45px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.contacts-registration {
+  width: 150px;
+  height: 45px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.contacts a {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.main-navigation a {
+color: var(--basic-white);
+}
+
+.site-navigation {
+list-style: none;
+}
+
+
+.container a {
+  text-decoration: none;
+}
+
+.offers-button {
+  background-color: var(--basic-white);
+  opacity: 30%;
+  width: 135px;
+  height: 38px;
+  color: var(--basic-white);
+}
+
+
+.offers-list {
+  list-style: none;
+}
+
+.offers-list li {
+  width: 300px;
+  height: 123px;
+  vertical-align: middle;
+ }
+
+.offers-list li:nth-child(1) {
+  background-color: var(--basic-special-yellow);
+ }
+
+.offers-list li:nth-child(2) {
+  background-color: var(--basic-teal);
+ }
+
+ .offers-list li:nth-child(3) {
+  background-color: var(--basic-pink);
+ }
+
+ .offers-list li:nth-child(4) {
+  background-color: var(--basic-light-green);
+ }
+
+.offers-list li:last-child {
+  background-color: var(--basic-light-yellow);
+ }
+
+.slider h2 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 18px;
+  color: var(--basic-white);
+}
+
+.slider-button-style {
+  width: 192px;
+  height: 38px;
+  background-color: var(--basic-red);
+
+  vertical-align: middle;
+  text-align: center;
+}
+
+.catalog catalog-topline {
+  background-color: var(--basic-red);
+}
+
+.catalog h2 {
+  font-size: 30px;
+  font-weight: 400;;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark-teal);
+
+}
+
+.catalog-button {
+  font-size: 14px;
+  line-height: 18px;
+  color:var(--basic-white);
+  text-transform: uppercase;
+}
+
+.catalog-button-style {
+  width: 192px;
+  height: 38px;
+  background-color: var(--basic-red);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list li {
+  border: 1px solid #EAEAEA;
+  background-color: var(--basic-white);
+  width: 220px;
+  height: 318px;
+  text-align: center;
+}
+
+.catalog-list li p {
+  color: var(--basic-black)
+}
+
+.catalog-list li s {
+  color: var(--basic-gray);
+}
+
+.redprice {
+  background-image: url("img/redprice.svg");
+}
