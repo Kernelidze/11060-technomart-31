@@ -229,7 +229,7 @@ list-style: none;
   height: 123px;
   text-align: center;
   font-size: 24px;
-  font-weight: 30px;
+  line-height: 30px;
   background-repeat: no-repeat;
   background-position: 85% 50%;
  }
@@ -266,7 +266,7 @@ list-style: none;
   color: var(--basic-white);
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 18px;
+  line-height: 18px;
   padding: 5px;
 }
 
@@ -312,7 +312,7 @@ list-style: none;
 .slider-button {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 18px;
+  line-height: 18px;
   color: var(--basic-white);
 }
 
@@ -403,7 +403,33 @@ list-style: none;
   line-height: 20px;
   font-weight: 700;
   font-family: "PT Sans";
-  color: var(--basic-black)
+  color: var(--basic-black);
+}
+
+.catalog-item-buy {
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  background-color: var(--basic-green);
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: none;
+}
+
+.catalog-item-favorites {
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  background-color: var(--basic-green);
+}
+
+.catalog-item-buy a,
+.catalog-item-favorites a {
+  color: var(--basic-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum";
 }
 
 .manufacturers {
@@ -769,19 +795,7 @@ color: var(--basic-orange);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-item-buy {
-  width: 135px;
-  height: 38px;
-  text-align: center;
-  background-color: var(--basic-green);
-}
 
-.into-favorites {
-  width: 135px;
-  height: 38px;
-  text-align: center;
-  background-color: var(--basic-green);
-}
 
 .pages-list {
   list-style: none;
