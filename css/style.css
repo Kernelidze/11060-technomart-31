@@ -22,7 +22,7 @@
   --basic-light-green: #8ED78F;
 }
 
-body {
+.page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -31,6 +31,24 @@ body {
   line-height: 24px;
   font-weight: 400;
   background-color: var(--basic-light-gray);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page {
+  height: 100%;
+}
+
+.main-header {
+
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+
+  display: grid;
 }
 
 .main-header a,
@@ -47,6 +65,17 @@ body {
   background-color: var(--basic-dark-blue);
   font-size: 18px;
   line-height: 24px;
+  display: grid;
+  grid-template-columns: min-content 1fr auto auto auto;
+}
+
+.upper-line-bookmark,
+.upper-line-cart {
+  margin: 9px 25px;
+}
+
+.upper-line-search {
+  margin: 9px 17px;
 }
 
 .upper-line a {
@@ -55,7 +84,7 @@ body {
 
 .logo {
   width: 220px;
-  height: 47px;
+  height: 42px;
   background-image:url("/img/logo.svg");
   background-repeat: no-repeat;
   background-color: var(--basic-red);
@@ -63,19 +92,17 @@ body {
   box-shadow: inset 0px -5px 0px var(--basic-red-shadow);
 }
 
-.upper-line-cart,
 .upper-line-offer {
+  text-align: center;
+  background-color: var(--basic-green);
   width: 150px;
   height: 42px;
-  text-align: center;
 }
 
-.upper-line-cart {
-  background-color: var(--basic-red);
-}
+.contacts {
 
-.upper-line-offer {
-  background-color: var(--basic-green);
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .contacts h1 {
@@ -149,6 +176,9 @@ body {
 .main-navigation {
   background-color: var(--basic-dark-teal);
   list-style: none;
+
+  outline: 5px solid rgba(100, 244, 50 , 0.3);
+  outline-offset: -5px;
 }
 
 .main-navigation a {
@@ -158,6 +188,8 @@ color: var(--basic-white);
 .site-navigation {
 list-style: none;
 }
+
+
 
 .container {
   color: var(--basic-white);
@@ -616,6 +648,9 @@ color: var(--basic-orange);
 
 .lower-line p {
   color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .footer-social ul {
