@@ -712,6 +712,19 @@ color: var(--basic-orange);
   background-color: var(--basic-white);
 }
 
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-list li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+}
+
 
 .perforators h1 {
   font-size: 30px;
