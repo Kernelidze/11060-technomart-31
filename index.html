@@ -28,8 +28,8 @@
 
       <div class="upper-line-search">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="search-form-input" type="text" name="search" placeholder="Поиск:">
-          </form>
+          <input class="search-form-input" type="text" name="search" placeholder="Поиск:">
+        </form>
       </div>
 
       <div class="upper-line-bookmark">
@@ -99,13 +99,28 @@
           <a class="offers-button" href="#">на 350 товаров</a>
         </li>
         <li>
+          <div class="slider-1">
+            <h2>Перфораторы</h2>
+            <p>Настоящие мужские игрушки</p>
+            <button class="slider-button-left" type="button"></button>
+            <button class="slider-button-right" type="button"></button>
+            <div class="slider-button-style">
+              <a class="slider-button" href="catalog.html">открыть каталог</a>
+            </div>
+            <div class="slider-2">
+              <h2>Дрели</h2>
+              <p>Соседям на радость!</p>
+            </div>
+          </div>
+        </li>
+        <li>
           <p>Доставка</p>
           <a class="offers-button" href="#">бесплатно</a>
         </li>
       </ul>
     </section>
 
-    <section class="slider">
+    <!-- <section class="slider">
       <div class="slider-1">
         <h2>Перфораторы</h2>
         <p>Настоящие мужские игрушки</p>
@@ -119,7 +134,7 @@
       <p class="slider-button-style">
         <a class="slider-button" href="catalog.html">открыть каталог</a>
       </p>
-    </section>
+    </section> -->
 
     <section class="catalog">
       <div class="catalog-line">
@@ -230,23 +245,25 @@
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать
         ваши покупки приятными.</p>
-      <div>
-        <ul class="services-list">
-          <li class="services-item-selected">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="services-item">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="services-item">
-            <a href="#">Кредит</a>
-          </li>
-        </ul>
-      </div>
-      <div class="services-delivery">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо
-          заработаем,<br>поднимая его на ваш этаж!</p>
+      <div class="services-grid">
+        <div>
+          <ul class="services-list">
+            <li class="services-item-selected">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="services-item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="services-item">
+              <a href="#">Кредит</a>
+            </li>
+          </ul>
+        </div>
+        <div class="services-delivery">
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо
+            заработаем,<br>поднимая его на ваш этаж!</p>
+        </div>
       </div>
       <div class="services-guarantee">
         <h2>Гарантия</h2>
@@ -270,7 +287,7 @@
         <h2>Компания «ТЕХНОМАРТ»</h2>
         <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для<br>ремонта и строительства не оставит
           равнодушными любителей сэкономить на<br>гастарбайтерах.<br><br>
-        Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными
+          Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными
           компаниями:</p>
         <ul>
           <li>Деловые линии</li>
@@ -295,25 +312,30 @@
     </section>
 
     <section class="modal">
-      <button class="modal-button-close" type="button"></button>
+
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-item">
           <label for="modal-name">Ваше имя:</label><br>
           <input id="modal-name" type="text" name="name" placeholder="Имя Фамилия">
         </div>
         <div class="modal-item">
-          <label for="modal-email">Ваше имя:</label><br>
+          <label for="modal-email">Ваш e-mail:</label><br>
           <input id="modal-email" type="text" name="email" placeholder="email@example.com">
         </div>
-        <div class="modal-item">
+        <div class="modal-item-letter">
           <label for="modal-letter">Текст письма:</label><br>
           <input id="modal-letter" type="text" name="letter" placeholder="В свободной форме">
         </div>
-        <div class="modal-map-button">
-          <a class="modal-button" href="#">Отправить</a>
+        <div class="modal-button-background">
+          <div class="modal-form-button">
+            <a class="modal-button" href="#">Отправить</a>
+          </div>
         </div>
+
       </form>
     </section>
+
+    <button class="modal-button-close" type="button"></button>
 
     <section class="modal-map-big">
       <button class="modal-button-close" type="button"></button>
@@ -322,32 +344,37 @@
   </main>
 
   <footer class="main-footer">
-    <div class="logo-image-footer">
-      <a href="index.html">
-        <img src="img/logo.svg" width="138" height="23" alt="«Логотип магазина Техномарт»">
-      </a>
+
+    <div class="footer-block-1">
+
+      <div class="logo-image-footer">
+        <a href="index.html">
+          <img src="img/logo.svg" width="138" height="23" alt="«Логотип магазина Техномарт»">
+        </a>
+      </div>
+
+      <section class="footer-navigation-1">
+        <ul class="footer-navigation-1">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </section>
+
+      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
+
+      <section class="footer-navigation-2">
+        <ul class="footer-navigation-2">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </section>
+
     </div>
-
-    <section class="footer-navigation-1">
-      <ul class="footer-navigation-1">
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </section>
-
-    <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
-
-    <section class="footer-navigation-2">
-      <ul class="footer-navigation-2">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
-    </section>
 
     <section class="lower-line">
       <p class="copyright">&copy; 2010-2021 Компания «Техномарт» <br>Все права защищены</p>
