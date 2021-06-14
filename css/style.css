@@ -1025,6 +1025,12 @@ width: 940px;
   text-align: center;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  align-items: center;
+}
+
+.logo-image-footer {
+  align-items: center;
+  justify-items: center;
 }
 
 .logo-image-footer:hover {
