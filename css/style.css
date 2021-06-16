@@ -1075,10 +1075,10 @@ width: 940px;
 
 .main-footer {
   background-color: var(--basic-dark-teal);
-  justify-self: center;
-  justify-content: center;
+
   width: 100%;
   display: grid;
+
 
 }
 
@@ -1088,6 +1088,7 @@ width: 940px;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
   width: 940px;
+  justify-self: center;
 
 
 
@@ -1201,12 +1202,15 @@ color: var(--basic-orange);
   grid-template-columns: 1fr auto auto auto;
   align-items: center;
   width: 940px;
+
 }
 
 .lower-line-background {
 
   background-color: var(--basic-dark-blue);
   width: 100%;
+  justify-content: center;
+  display: grid;
 }
 
 .lower-line p {
