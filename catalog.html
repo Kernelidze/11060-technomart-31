@@ -57,11 +57,10 @@
       <div class="contacts-login-user">
         <a href="#">Равшан Джамшутович</a>
       </div>
-      <div class="my-offers">
-        <a href="#">Мои заказы</a>
-      </div>
       <div class="my-cabinet">
-        <a href="#">Личный кабинет</a>
+        <a href="#">Мои заказы&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        &bull;
+        <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Личный кабинет</a>
       </div>
     </section>
 
@@ -116,50 +115,64 @@
         <form action="https://echo.htmlacademy.ru/courses" method="get">
           <div class="filter-price">
             <p>Цена:</p>
-            <input class="pricearea" type="text" name="min-price" placeholder="0"> &ndash; <input class="pricearea"
-              type="text" name="max-price" placeholder="30000">
-          </div>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
+            <div class="filter-manufacturers">
+              <p>Производители:</p>
+              <ul>
+                <li>
+                  <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <label for="filter-bosch">BOSCH</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="interskol" id="filter-interskol">
+                  <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="makita" id="filter-makita" checked>
+                  <label for="filter-makita">MAKITA</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">DEWALT</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">HITACHI</label>
+                </li>
+              </ul>
+            </div>
 
-          <div class="filter-manufacturers">
-            <p>Производители:</p>
-            <ul>
-              <li>
-                <input type="checkbox" name="bosch" id="filter-bosch" checked>
-                <label for="filter-bosch">BOSCH</label>
-              </li>
-              <li>
-                <input type="checkbox" name="interskol" id="filter-interskol">
-                <label for="filter-interskol">ИНТЕРСКОЛ</label>
-              </li>
-              <li>
-                <input type="checkbox" name="makita" id="filter-makita" checked>
-                <label for="filter-makita">MAKITA</label>
-              </li>
-              <li>
-                <input type="checkbox" name="dewalt" id="filter-dewalt">
-                <label for="filter-dewalt">DEWALT</label>
-              </li>
-              <li>
-                <input type="checkbox" name="hitachi" id="filter-hitachi">
-                <label for="filter-hitachi">HITACHI</label>
-              </li>
-            </ul>
-          </div>
-
-          <div class="filter-power">
-            <p>Питание:</p>
-            <ul>
-              <li>
-                <input type="radio" name="pitanie" value="accumulator" id="filter-accumulator" checked>
-                <label for="filter-accumulator">Аккумуляторные</label>
-              </li>
-              <li>
-                <input type="radio" name="pitanie" value="setevie" id="filter-setevie">
-                <label for="filter-setevie">Сетевые</label>
-              </li>
-            </ul>
-          </div>
-          <button type="submit" class="filter-button">Показать</button>
+            <div class="filter-power">
+              <p>Питание:</p>
+              <ul>
+                <li>
+                  <input type="radio" name="pitanie" value="accumulator" id="filter-accumulator" checked>
+                  <label for="filter-accumulator">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="pitanie" value="setevie" id="filter-setevie">
+                  <label for="filter-setevie">Сетевые</label>
+                </li>
+              </ul>
+            </div>
+            <button type="submit" class="filter-button">Показать</button>
+            </div>
         </form>
       </section>
 
