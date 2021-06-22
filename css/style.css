@@ -95,6 +95,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 
 }
 
@@ -122,6 +123,7 @@
   background-color: var(--basic-dark-red);
 }
 
+
 .search-form {
   color: var(--basic-white);
   width: 290px;
@@ -138,6 +140,22 @@
   height: 17px;
   top: 12px;
   left: 17px;
+  opacity: 0.3;
+}
+
+.search-form:hover::before {
+  opacity: 1;
+}
+
+.search-form:active::before {
+  position: absolute;
+  content: url("../img/icon-search.svg");
+  width: 17px;
+  height: 17px;
+  top: 12px;
+  left: 17px;
+  opacity: 1;
+  stroke: black;
 }
 
 .search-form-input {
@@ -151,18 +169,29 @@
   height: 42px;
 }
 
+.search-form:active {
+  border: none;
+}
+
+.search-form-input:focus {
+  border: none;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
 .search-form-input::placeholder {
   color: var(--basic-white);
 }
 
-.search-form-input::placeholder::hover {
-  color: var(--basic-red);
-}
+/* .search-form-input:hover::placeholder {
+
+} */
 
 .upper-line-bookmark {
   width: 106px;
   height: 24px;
   padding-right: 50px;
+
 }
 
 .upper-line-bookmark::before {
@@ -171,6 +200,11 @@
   width: 14px;
   height: 16px;
   top: 13px;
+  opacity: 0.3;
+}
+
+.upper-line-bookmark:hover::before {
+  opacity: 1;
 }
 
 .upper-line-cart {
@@ -187,6 +221,11 @@
   width: 15px;
   height: 15px;
   top: 13px;
+  opacity: 0.3;
+}
+
+.upper-line-cart:hover::before {
+  opacity: 1;
 }
 
 .upper-line-search:active,
@@ -244,6 +283,10 @@
   text-align: center;
   margin: 46px 69px 0 69px;
   position: relative;
+  display: grid;
+  align-content: center;
+  justify-content: flex-end;
+
 }
 
 .contacts-phone::before {
@@ -262,12 +305,7 @@
   color: var(--basic-red);
   background-color: var(--basic-light-gray);
   display: grid;
-
-  margin: 0;
-  padding: 0;
-  margin-top: 7px;
-  margin-right: 50px;;
-
+  margin-right: 45px;
 }
 
 .contacts p {
@@ -313,6 +351,11 @@
   height: 17px;
   top: 14px;
   left: 19px;
+  opacity: 0.3;
+}
+
+.contacts-login:hover::before {
+  opacity: 1;
 }
 
 .contacts-registration {
@@ -685,19 +728,18 @@ display: flex;
 
 
 .catalog-item {
-
   width: 218px;
   height: 318px;
   border: 1px solid var(--basic-border-color);
+  box-sizing: border-box;
   background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 21px;
-
-
 }
+
 
 .catalog-item s {
   color: var(--basic-gray);
@@ -742,7 +784,7 @@ display: flex;
   color: var(--basic-black);
   text-align: center;
   padding-bottom: 7px;
-
+  margin: 0;
 }
 
 .green-buttons {
@@ -1009,6 +1051,8 @@ display: flex;
   position: relative;
   width: 620px;
   justify-self: center;
+
+
 }
 
 .modal-form {
@@ -1019,22 +1063,43 @@ display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
+  justify-items: center;
+  column-gap: 20px;
+
 
 }
 
-.modal-item {
+.modal-item-name {
   font-size: 18px;
   line-height: 24px;
+  justify-self: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 39px;
+}
+
+.modal-item-email {
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: left;
+  margin-top: 39px;
 }
 
 .modal-item-letter {
   grid-column: 1/-1;
   font-size: 18px;
   line-height: 24px;
+  margin-top: 13px;
+
 
 }
 
-.modal-item input{
+.modal-item-name input,
+.modal-item-email input {
   border: 2px solid var(--basic-greylight);
   font-size: 13px;
   line-height: 24px;
@@ -1042,6 +1107,8 @@ display: flex;
   height: 38px;
   padding: 7px 8px 7px 12px;
   box-sizing: border-box;
+  margin-top: 11px;
+
 }
 
 .modal-item-letter input {
@@ -1049,11 +1116,13 @@ display: flex;
   height: 114px;
   border: 2px solid var(--basic-greylight);
   box-sizing: border-box;
+  margin-bottom: 37px;
+  margin-top: 11px;
 }
 
 .modal-button-close {
-  width: 25px;
-  height: 25px;
+  width: 21px;
+  height: 21px;
   background-image:url("../img/icon-close.svg");
   background-color: rgba(255, 255, 255, 0);
   background-repeat: no-repeat;
@@ -1071,6 +1140,8 @@ display: flex;
   display: grid;
   align-content: center;
   justify-content: center;
+  margin: 0;
+  margin-top: 37px;
 }
 
 .modal-button {
@@ -1078,6 +1149,8 @@ display: flex;
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
+
+
 
 }
 
@@ -1088,6 +1161,8 @@ display: flex;
   grid-column: 1/-1;
   display: flex;
   justify-content: center;
+
+
 }
 
 
