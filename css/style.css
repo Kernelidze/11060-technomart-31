@@ -489,8 +489,8 @@
 color: var(--basic-white);
 }
 
-.site-navigation li:hover,
-.site-navigation li:focus {
+.site-navigation li a:hover,
+.site-navigation li a:focus {
   background-color: var(--basic-dark-blue);
 }
 
@@ -503,22 +503,20 @@ list-style: none;
 margin: 0;
 padding: 0;
 display: flex;
+justify-content: center;
 }
 
-.site-navigation li {
-  padding: 16px 28px 20px;
+.site-navigation li a{
+  line-height: 60px;
+  padding: 16px 28px 20px 28px;
 }
 
 .site-navigation li:nth-child(1) {
-  padding-left: 53px;
+  padding-left: 25px;
 }
 
 .site-navigation li:last-child {
-  padding-right: 53px;
-}
-
-.site-navigation li a {
-
+  padding-right: 25px;
 }
 
 .container {
@@ -813,6 +811,7 @@ display: flex;
   background-color: var(--basic-white);
   padding-bottom: 21px;
   display: grid;
+  grid-template-columns: 220px;
   grid-template-rows: auto min-content min-content min-content;
   justify-content: center;
 }
@@ -822,11 +821,12 @@ display: flex;
 }
 
 
-
-.catalog-item a {
+/* .catalog-item a {
   display: grid;
   align-content: center ;
-}
+  justify-content: center;} */
+
+
 
 
 .catalog-item s {
@@ -834,7 +834,7 @@ display: flex;
   padding-bottom: 13px;
 }
 
-.catalog-item div {
+.catalog-item div{
   width: 141px;
   height: 38px;
   background-image: url("../img/redprice.svg");
@@ -889,12 +889,30 @@ display: flex;
   font-family: "Cuprum";
 }
 
+.img-9000 {
+  margin-top: 6px;
+  margin-left: 18px;
+}
+
+.img-6000 {
+  margin-top: 22px;
+  margin-left: 33px;
+}
+
+.img-3000,
+.img-2000 {
+  margin-top: 29px;
+  margin-left: 40px;
+}
+
 
 .over-catalog-variant {
   display: grid;
   gap: 10px;
   display: none;
-
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .catalog-item-buy {
@@ -902,6 +920,8 @@ display: flex;
   height: 38px;
   background-color: var(--basic-green);
   box-shadow: inset 0px -3px 0px #367315;
+  background-image: none;
+
 }
 
 .catalog-item-buy::before {
@@ -1016,6 +1036,7 @@ display: flex;
 
 .manufacturers-item:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0.5;
 }
 
 
@@ -1568,7 +1589,7 @@ display: flex;
   margin: 0;
   padding: 0;
   display: flex;
-  margin-top: 36px;
+  margin-top: 39px;
 }
 
 .footer-navigation-1 ul li {
@@ -1596,7 +1617,7 @@ display: flex;
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .footer-navigation-2 ul li {
@@ -1661,12 +1682,13 @@ color: var(--basic-orange);
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  padding-top: 3px;
 }
 
 .footer-social-list {
   list-style: none;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 7px;
   padding: 0;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -1704,11 +1726,11 @@ color: var(--basic-orange);
 }
 
 .footer-copyright {
-  margin: 35px 13px 35px 51px;
+  margin: 37px 13px 35px 51px;
 }
 
 .footer-mail {
-  margin: 35px 0 35px 118px;
+  margin: 37px 0 35px 118px;
 }
 
 .footer-mail a,
@@ -1776,14 +1798,13 @@ color: var(--basic-orange);
 
 .breadcrumbs-list li:nth-child(1) {
   position: relative;
-  margin-right: 43px;
-
+  margin-right: 41px;
 }
 
 
 .breadcrumbs-list li:nth-child(2) {
   position: relative;
-  margin-right: 42px;
+  margin-right: 40px;
 }
 
 
@@ -1793,12 +1814,12 @@ color: var(--basic-orange);
   width: 8px;
   height: 12px;
   top: 2px;
-  left: -22px;
+  left: -27px;
 }
 
 .breadcrumbs-list li:nth-child(3) {
   position: relative;
-  margin-right: 43px;
+  margin-right: 42px;
 }
 
 
@@ -1808,7 +1829,7 @@ color: var(--basic-orange);
   width: 8px;
   height: 12px;
   top: 2px;
-  left: -22px;
+  left: -23px;
 }
 
 .breadcrumbs-list li:nth-child(4) {
@@ -2148,8 +2169,7 @@ color: var(--basic-orange);
   grid-column: 2/-1;
   grid-row: 1/2;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-
+  grid-template-columns: min-content auto auto auto 1fr 1fr;
 }
 
 .sort-line p {
@@ -2160,17 +2180,64 @@ color: var(--basic-orange);
 
 }
 
-.sort-line-price,
-.sort-line-type,
-.sort-line-function {
+.sort-line-price {
+  padding-left: 140px;
+}
+
+.sort-line-type {
   padding-left: 70px;
-  align-self: center;
 }
 
-.sort-line-price a {
-  color: var(--basic-red);
+.sort-line-function {
+  padding-left: 65px;
 }
 
+.grow-up {
+  padding-left: 46px;
+  position: relative;
+}
+
+.grow-up a{
+  content:url("../img/grow-up-rest.svg");
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: -3px;
+}
+
+.grow-up a:hover {
+  content:url("../img/grow-up-hover.svg");
+}
+
+.grow-up a:focus {
+  content:url("../img/grow-up-active.svg");
+}
+
+.grow-down {
+  padding-left: 21px;
+  position: relative;
+}
+
+.grow-down a{
+  content:url("../img/grow-down-rest.svg");
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: -3px;
+  left: 27px;
+}
+
+.grow-down a:hover {
+  content:url("../img/grow-down-hover.svg");
+}
+
+.grow-down a:focus {
+  content:url("../img/grow-down-active.svg");
+}
+
+
+
+.sort-line-price a,
 .sort-line-type a,
 .sort-line-function a {
   color: rgba(0, 0, 0, 0.3);
@@ -2184,9 +2251,9 @@ color: var(--basic-orange);
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sort-line-price a:active,
-.sort-line-type a:active,
-.sort-line-function a:active {
+.sort-line-price a:focus,
+.sort-line-type a:focus,
+.sort-line-function a:focus {
   color: var(--basic-red);
   border: none;
 }
@@ -2273,6 +2340,7 @@ color: var(--basic-orange);
   height: 38px;
   border: 1px solid var(--basic-border-color-2);
   border-radius: 2px;
+  box-sizing: border-box;
   text-align: center;
   display: grid;
   align-content: center;
@@ -2284,6 +2352,7 @@ color: var(--basic-orange);
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border-color-2);
   border-radius: 2px;
+  box-sizing: border-box;
   text-align: center;
   display: grid;
   align-content: center;
@@ -2314,17 +2383,17 @@ color: var(--basic-orange);
   line-height: 18px;
 }
 
-.page-number:active,
-.page-number-next:active,
-.page-number-selected:active {
-  border: 1px solid var(--basic-red);
-}
-
 .page-number:hover,
 .page-number-next:hover,
 .page-number-selected:hover {
   border: 1px solid var(--basic-greylight);
   border-radius: 2px;
+}
+
+.page-number:active,
+.page-number-next:active,
+.page-number-selected:active {
+  border: 1px solid var(--basic-red);
 }
 
 .perforators-description {
@@ -2353,6 +2422,6 @@ color: var(--basic-orange);
   font-size: 13px;
   line-height: 24px;
   width: 940px;
-  margin-bottom: 68px;
+  margin-bottom: 71px;
   margin-top: 25px;
 }
