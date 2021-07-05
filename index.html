@@ -111,18 +111,22 @@
           <p>Настоящие мужские игрушки</p>
           <button class="slider-button-left" type="button"></button>
           <button class="slider-button-right" type="button"></button>
-          <p class="slider-button-style">
+          <div class="slider-button-style">
             <a class="slider-button" href="catalog.html">открыть каталог</a>
-          </p>
+          </div>
+          <div class="slider-dots"></div>
+          <div class="slider-dots-active"></div>
         </div>
         <div class="slider-2 visually-hidden">
           <h2>Дрели</h2>
           <p>Соседям на радость!</p>
           <button class="slider-button-left" type="button"></button>
           <button class="slider-button-right" type="button"></button>
-          <p class="slider-button-style">
+          <div class="slider-button-style">
             <a class="slider-button" href="catalog.html">открыть каталог</a>
-          </p>
+          </div>
+          <div class="slider-dots-active"></div>
+          <div class="slider-dots"></div>
         </div>
       </div>
     </section>
@@ -131,9 +135,9 @@
     <section class="catalog">
       <div class="catalog-line">
         <h2>Популярные товары:</h2>
-        <p class="catalog-button-style">
+        <div class="catalog-button-style">
           <a class="catalog-button" href="#">все популярные товары</a>
-        </p>
+        </div>
       </div>
       <ul class="catalog-list">
 
@@ -204,7 +208,7 @@
         </li>
       </ul>
       <div class="modal-cart visually-hidden">
-       <button class="modal-button-close-cart"></button>
+       <button class="modal-button-close-cart" type="button"></button>
         <h3>Товар добавлен в корзину!</h3>
         <div class="modal-cart-button-background">
           <div class="modal-cart-button-form">
@@ -222,9 +226,9 @@
     <section class="manufacturers">
       <div class="line-manufacturers">
         <h2>Популярные производители:</h2>
-        <p class="manufacturers-button-style">
-          <a href="#">все производители</a>
-        </p>
+        <div class="manufacturers-button-style">
+          <a class="manufacturers-button" href="#">все производители</a>
+        </div>
       </div>
       <ul class="manufacturers-list">
         <li class="manufacturers-item">
@@ -386,7 +390,7 @@
     <div class="footer-block-1">
 
       <div class="logo-image-footer">
-        <a href="index.html">
+        <a class="logo-image-footer-link" href="index.html">
           <img src="img/logo.svg" width="138" height="23" alt="«Логотип магазина Техномарт»">
         </a>
       </div>

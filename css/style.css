@@ -654,6 +654,7 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
+  padding: 11px 45px 9px 45px;
 }
 
 .slider-1 .slider-button-style {
@@ -692,6 +693,70 @@
   background-color: var(--basic-red-click);
 }
 
+.slider-dots {
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--basic-white);
+  bottom: 36px;
+  left: 295px;
+}
+
+.slider-dots-active {
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--basic-white);
+  bottom: 36px;
+  left: 315px;
+}
+
+.slider-dots-active::before {
+  content:"";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: var(--basic-red);
+}
+
+.slider-2 .slider-dots {
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--basic-white);
+  bottom: 36px;
+  left: 315px;
+}
+
+.slider-2 .slider-dots-active {
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--basic-white);
+  bottom: 36px;
+  left: 295px;
+}
+
+.slider-2 .slider-dots-active::before {
+  content:"";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: var(--basic-red);
+}
+
 .catalog {
   width: 940px;
   background-color: var(--basic-white);
@@ -720,6 +785,7 @@
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
+  padding: 11px 23px 9px 23px;
 }
 
 .catalog-button-style {
@@ -918,6 +984,7 @@
   grid-template-columns: 1fr auto;
   height: 89px;
   align-items: center;
+  background-color: var(--basic-beige);
 }
 
 .manufacturers a {
@@ -928,7 +995,7 @@
 }
 
 .manufacturers div {
-  background-color: var(--basic-beige);
+
 }
 
 .manufacturers-button-style {
@@ -940,6 +1007,10 @@
   align-self: center;
   align-content: center;
   justify-content: center;
+}
+
+.manufacturers-button {
+  padding: 11px 36px 9px 36px;
 }
 
 .manufacturers h2 {
@@ -1233,6 +1304,7 @@
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
+  padding: 11px 40px 9px 39px;
 }
 
 .contacts-map {
@@ -1277,6 +1349,7 @@
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
+  padding: 11px 61px 9px 61px;
 }
 
 .promo {
@@ -1566,6 +1639,10 @@
 
 .logo-image-footer:hover {
   background-color: var(--basic-dark-red);
+}
+
+.logo-image-footer-link {
+  padding: 21px 41px 19px 40px;
 }
 
 .footer-navigation-1 {
