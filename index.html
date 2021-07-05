@@ -68,13 +68,13 @@
 
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a class="site-navigation-object" href="index.html">Главная</a></li>
+        <li><a class="site-navigation-object" href="#">Компания</a></li>
+        <li><a class="site-navigation-object" href="catalog.html">Каталог</a></li>
+        <li><a class="site-navigation-object" href="#">Новости</a></li>
+        <li><a class="site-navigation-object" href="#">Спецпредложения</a></li>
+        <li><a class="site-navigation-object" href="#">Доставка</a></li>
+        <li><a class="site-navigation-object" href="#">Контакты</a></li>
       </ul>
     </nav>
 
@@ -85,23 +85,23 @@
     <section class="offers">
       <ul class="offers-list">
         <li>
-          <p>Материалы</p>
+          <p class="offers-head">Материалы</p>
           <a class="offers-button" href="#">на любой вкус</a>
         </li>
         <li>
-          <p>Инструмент</p>
+          <p class="offers-head">Инструмент</p>
           <a class="offers-button" href="#">на все случаи</a>
         </li>
         <li>
-          <p>Техника</p>
+          <p class="offers-head">Техника</p>
           <a class="offers-button" href="#">для стройки</a>
         </li>
         <li>
-          <p>Скидки 50%</p>
+          <p class="offers-head">Скидки 50%</p>
           <a class="offers-button" href="#">на 350 товаров</a>
         </li>
         <li>
-          <p>Доставка</p>
+          <p class="offers-head">Доставка</p>
           <a class="offers-button" href="#">бесплатно</a>
         </li>
       </ul>
@@ -140,54 +140,81 @@
         <li class="catalog-item">
           <div class="over-catalog-variant">
             <div class="catalog-item-buy">
-              <a class="" href="#">Купить</a>
+              <a class="item-buy-link" href="#">Купить</a>
             </div>
             <div class="catalog-item-favorites">
-              <a href="#">В закладки</a>
+              <a class="item-favorites-link" href="#">В закладки</a>
             </div>
           </div>
-          <!-- <a href="#">
-            <img class="img-9000" src="img/catalog/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-          </a> -->
+          <img class="img-9000" src="img/catalog/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
           <p>Перфоратор BOSCH<br>BFG 9000</p>
           <s>32500 P.</s>
-          <div>
+          <div class="redprice">
             <a class="catalog-button-price" href="#">25500 P.</a>
           </div>
         </li>
 
-        <li class="catalog-item">
-          <a href="#">
-            <img class="img-3000" src="img/catalog/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-          </a>
+        <li class="catalog-item new">
+          <div class="over-catalog-variant">
+            <div class="catalog-item-buy">
+              <a class="item-buy-link" href="#">Купить</a>
+            </div>
+            <div class="catalog-item-favorites">
+              <a class="item-favorites-link" href="#">В закладки</a>
+            </div>
+          </div>
+          <img class="img-3000" src="img/catalog/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           <p>Перфоратор BOSCH<br>BFG 3000</p>
-
           <s>22500 P.</s>
-          <div>
+          <div class="redprice">
             <a class="catalog-button-price" href="#">15500 P.</a>
           </div>
         </li>
         <li class="catalog-item">
-          <a href="#">
-            <img class="img-6000" src="img/catalog/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-          </a>
+          <div class="over-catalog-variant">
+            <div class="catalog-item-buy">
+              <a class="item-buy-link" href="#">Купить</a>
+            </div>
+            <div class="catalog-item-favorites">
+              <a class="item-favorites-link" href="#">В закладки</a>
+            </div>
+          </div>
+          <img class="img-6000" src="img/catalog/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           <p>Перфоратор BOSCH<br>BFG 6000</p>
           <s>30500 P.</s>
-          <div>
+          <div class="redprice">
             <a class="catalog-button-price" href="#">25500 P.</a>
           </div>
         </li>
-        <li class="catalog-item">
-          <a href="#">
-            <img class="img-2000" src="img/catalog/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-          </a>
+        <li class="catalog-item new">
+          <div class="over-catalog-variant">
+            <div class="catalog-item-buy">
+              <a class="item-buy-link" href="#">Купить</a>
+            </div>
+            <div class="catalog-item-favorites">
+              <a class="item-favorites-link" href="#">В закладки</a>
+            </div>
+          </div>
+          <img class="img-2000" src="img/catalog/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
           <p>Перфоратор BOSCH<br>BFG 2000</p>
           <s>22500 P.</s>
-          <div>
+          <div class="redprice">
             <a class="catalog-button-price" href="#">12500 P.</a>
           </div>
         </li>
       </ul>
+      <div class="modal-cart visually-hidden">
+       <button class="modal-button-close-cart"></button>
+        <h3>Товар добавлен в корзину!</h3>
+        <div class="modal-cart-button-background">
+          <div class="modal-cart-button-form">
+            <a class="modal-cart-button" href="#">Оформить заказ</a>
+          </div>
+          <div class="modal-cart-button-form-next">
+            <a class="modal-cart-button-next" href="#">Продолжить покупки</a>
+          </div>
+        </div>
+      </div>
     </section>
 
 
@@ -298,9 +325,11 @@
     <section class="promo">
       <div class="company-description">
         <h2>Компания «Техномарт»</h2>
-        <p class="promo-first">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="promo-second">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
-        <ul>
+        <p class="promo-first">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p class="promo-second">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со
+          многими транспортными компаниями:</p>
+        <ul class="promo-list">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
