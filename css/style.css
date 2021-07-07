@@ -18,6 +18,7 @@
   --basic-red-click: #BA2732;
   --basic-red-shadow: #B52933;
   --basic-red-credit: #FF5357;
+  --basic-red-submit: #EE3643;
   --basic-orange: #FFD180;
   --basic-teal: #3BBCE3;
   --basic-pink: #DC91D8;
@@ -50,7 +51,7 @@
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -321,17 +322,6 @@
   padding: 0;
 }
 
-.contacts-login a, .contacts-registration a {
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-  padding: 10px 25px;
-}
-
-.contacts-login a {
-  padding-right: 27px;
-}
-
 .contacts-login {
   width: 121px;
   height: 45px;
@@ -340,20 +330,40 @@
   display: grid;
   justify-content: right;
   align-items: center;
-  position: relative;
 }
 
-.contacts-login::before {
+.contacts-registration a {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  padding: 12px 25px;
+}
+
+
+
+.contacts-login a {
+  padding-right: 27px;
+  position: relative;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  padding: 12px 25px 12px 47px;
+  margin-right: 2px;
+}
+
+
+
+.contacts-login a::before {
   position: absolute;
   content: url("../img/icon-login.svg");
   width: 20px;
   height: 17px;
   top: 14px;
-  left: 19px;
+  left: 21px;
   opacity: 0.3;
 }
 
-.contacts-login:hover::before {
+.contacts-login a:hover::before {
   opacity: 1;
 }
 
@@ -380,7 +390,19 @@
 .contacts-login-user a {
   font-size: 21px;
   line-height: 21px;
+  text-decoration: none;
+  color: var(--basic-black);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
+
+.contacts-login-user a:hover {
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
 
 .contacts-login-user {
   width: 299px;
@@ -394,7 +416,7 @@
   position: relative;
 }
 
-.contacts-login-user::before {
+.contacts-login-user a::before {
   position: absolute;
   content: url("../img/icon-user.svg");
   width: 20px;
@@ -404,21 +426,21 @@
   opacity: 0.3;
 }
 
-.contacts-login-user::after {
+.user-logout {
   position: absolute;
   content: url("../img/icon-logout.svg");
   width: 20px;
   height: 17px;
-  top: 14px;
+  top: 3px;
   right: 17px;
   opacity: 0.3;
 }
 
-.contacts-login-user:hover::before, .contacts-login-user:hover::after {
+.contacts-login-user a:hover::before, .user-logout:hover {
   opacity: 1;
 }
 
-.contacts-login-user:active::before, .contacts-login-user:active::after, .contacts-login-user:focus {
+.contacts-login-user a:active::before, .user-logout:active, .contacts-login-user:focus {
   opacity: 0.3;
 }
 
@@ -473,9 +495,12 @@
 }
 
 .site-navigation-object {
-  line-height: 60px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   padding: 16px 28px 20px 28px;
   color: var(--basic-white);
+  display: inline-block;
 }
 
 .site-navigation li:nth-child(1) {
@@ -760,7 +785,6 @@
 .catalog {
   width: 940px;
   background-color: var(--basic-white);
-  margin-bottom: 70 px;
 }
 
 .catalog-line {
@@ -853,7 +877,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   display: grid;
   justify-self: center;
   align-items: center;
@@ -867,7 +891,7 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: var(--basic-black);
   text-align: center;
   padding-bottom: 7px;
@@ -910,7 +934,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .catalog-item-buy {
@@ -994,10 +1018,6 @@
   text-transform: uppercase;
 }
 
-.manufacturers div {
-
-}
-
 .manufacturers-button-style {
   width: 192px;
   height: 38px;
@@ -1050,6 +1070,33 @@
   opacity: 0.5;
 }
 
+.manufacturers-item:first-child img{
+  padding-bottom: 5px;
+}
+
+.manufacturers-item:nth-child(2) img{
+  padding-bottom: 10px;
+}
+
+.manufacturers-item:nth-child(3) img{
+  padding-bottom: 10px;
+}
+
+.manufacturers-item:nth-child(4) img{
+  padding-bottom: 3px;
+}
+
+.manufacturers-item:nth-child(5) img{
+  padding-left: 5px;
+}
+
+.manufacturers-item:nth-child(6) img{
+  padding-bottom: 5px;
+}
+.manufacturers-item:last-child img{
+  padding-bottom: 3px;
+}
+
 .manufacturers-item a {
   display: grid;
   align-items: center;
@@ -1076,7 +1123,7 @@
 .services h2 {
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -1086,7 +1133,7 @@
 .services-background p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: var(--basic-black);
   padding-bottom: 67px;
   margin: 0;
@@ -1170,13 +1217,13 @@
 .services-delivery h2, .services-guarantee h2, .services-credit h2 {
   color: var(--basic-dark-teal);
   margin: 0;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .services-delivery p, .services-guarantee p, .services-credit p {
   color: var(--basic-dark-teal);
   margin-top: 30px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1204,17 +1251,15 @@
 .services-credit-button {
   width: 195px;
   height: 38px;
-  background-color: var(--basic-red-credit);
-  display: grid;
-  align-content: center;
-  justify-content: center;
-}
-
-.services-credit-button a {
+  background-color: var(--basic-red-submit);
   color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
+  border-radius: 3px;
   text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .promo {
@@ -1236,7 +1281,7 @@
 
 .company-description h2 {
   text-transform: uppercase;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1245,7 +1290,7 @@
 }
 
 .promo-first {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
@@ -1254,7 +1299,7 @@
 }
 
 .promo-second {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
@@ -1277,6 +1322,7 @@
 .promo-list li {
   margin-bottom: 12px;
   position: relative;
+  line-height: 24px;
 }
 
 .promo-list li::before {
@@ -1287,7 +1333,7 @@
   height: 2px;
   background-color: var(--basic-red);
   left: -37px;
-  top: 12px;
+  top: 10px;
 }
 
 .company-button {
@@ -1319,14 +1365,14 @@
 .contacts-map h2 {
   text-transform: uppercase;
   margin: 0;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
 }
 
 .contacts-map p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-top: 24px;
@@ -1358,12 +1404,14 @@
 
 .modal-cart {
   color: var(--basic-black);
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   width: 620px;
   height: 282px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  top: 655px;
-  left: 176px;
   display: grid;
   grid-template-rows: auto min-content;
   background-color: var(--basic-white);
@@ -1376,7 +1424,7 @@
   align-self: center;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -1454,7 +1502,7 @@
   color: var(--basic-black);
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   position: relative;
   width: 620px;
   grid-column: 1/-1;
@@ -1462,7 +1510,7 @@
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   position: absolute;
   bottom: 52px;
-  left: 149px;
+  left: 152px;
 }
 
 .modal-form {
@@ -1507,12 +1555,12 @@
 
 .modal-item-name input, .modal-item-email input {
   border: 2px solid var(--basic-greylight);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   width: 220px;
   height: 38px;
-  padding: 7px 8px 7px 12px;
+  padding: 6px 8px 7px 10px;
   box-sizing: border-box;
   margin-top: 11px;
 }
@@ -1524,13 +1572,10 @@
   box-sizing: border-box;
   margin-bottom: 30px;
   margin-top: 11px;
-}
-
-.modal-item-letter textarea {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  padding: 7px 8px 7px 12px;
+  padding: 4px 8px 7px 10px;
 }
 
 .modal-button-close {
@@ -1559,23 +1604,19 @@
   cursor: pointer;
 }
 
-.modal-form-button {
+.modal-button {
   width: 460px;
   height: 38px;
   background-color: var(--basic-red);
   margin-top: 25px;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  margin: 0;
-  margin-top: 37px;
-}
-
-.modal-button {
   font-size: 14px;
   line-height: 18px;
+  margin-top: 37px;
   color: var(--basic-white);
   text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .modal-button-background {
@@ -1595,15 +1636,19 @@
 }
 
 .modal-map-big {
-  width: 943px;
-  height: 449px;
-  background-image: url("../img/map-big.jpg");
   border-top: 7px solid var(--basic-red);
   box-sizing: border-box;
   position: relative;
   justify-self: center;
   position: absolute;
+  top: 14px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-map-big iframe{
+  border: none;
+  width: 943px;
+  height: 442px;
 }
 
 .main-footer {
@@ -1622,7 +1667,10 @@
 
 .footer-block-1 p {
   margin-bottom: 54px;
-  margin-top: 22px;
+  margin-top: 21px;
+  padding-left: 3px;
+  padding-top: 3px;
+
 }
 
 .logo-image-footer {
@@ -1649,7 +1697,7 @@
   background-color: var(--basic-dark-teal);
 }
 
-.footer-navigation-1 ul {
+.footer-list-1 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1657,11 +1705,11 @@
   margin-top: 39px;
 }
 
-.footer-navigation-1 ul li {
+.footer-list-1 li {
   margin: 0 29px;
 }
 
-.footer-navigation-1 ul li:last-child {
+.footer-list-1 li:last-child {
   margin-right: 0;
 }
 
@@ -1673,24 +1721,28 @@
   background-color: var(--basic-dark-teal);
 }
 
-.footer-navigation-2 ul {
+.footer-list-2 {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  margin-top: 29px;
+  margin-top: 27px;
 }
 
-.footer-navigation-2 ul li {
+.footer-list-2 li {
   margin: 0 29px;
 }
 
-.footer-navigation-2 ul li:first-child {
+.footer-list-2 li:first-child {
   margin-left: 80px;
 }
 
-.footer-navigation-2 ul li:last-child {
+.footer-list-2 li:nth-child(3) {
+  margin-left: 31px;
+}
+
+.footer-list-2 li:last-child {
   margin-right: 0;
 }
 
@@ -1713,7 +1765,7 @@
 }
 
 .main-footer p {
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-light-gray)
@@ -1734,18 +1786,19 @@
   display: grid;
 }
 
-.lower-line p {
+
+
+.copyright {
   color: var(--basic-white);
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  padding-top: 3px;
-}
+  padding-top: 0px;}
 
 .footer-social-list {
   list-style: none;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 3px;
   padding: 0;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -1780,12 +1833,20 @@
   background-image: url("../img/social-round-red.svg")
 }
 
+.footer-mail,
 .footer-copyright {
-  margin: 37px 13px 35px 51px;
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-copyright {
+  margin: 35px 13px 35px 51px;
 }
 
 .footer-mail {
-  margin: 37px 0 35px 118px;
+  margin: 37px 2px 35px 118px;
 }
 
 .footer-mail a, .footer-copyright a {
@@ -1815,7 +1876,7 @@
 }
 
 .breadcrumbs {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding-top: 21px;
@@ -1834,7 +1895,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--basic-black);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -1924,7 +1985,7 @@
 }
 
 .catalog-filters-header {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-beige);
@@ -1933,7 +1994,7 @@
 }
 
 .filter-price p, .filter-manufacturers p, .filter-power p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -2062,7 +2123,7 @@
   text-align: center;
   font-size: 17px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: var(--basic-black);
   border: 0px;
 }
@@ -2137,7 +2198,7 @@
 
 .price-controls label {
   text-transform: uppercase;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
 }
 
@@ -2153,25 +2214,25 @@
 }
 
 .price-controls p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 10px;
 }
 
 .min-price input, .max-price input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   outline: none;
 }
 
 .catalog-filters ul {
   list-style: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 19px;
 }
 
 .filter-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2179,15 +2240,15 @@
   border: 1px solid var(--basic-border-color-2);
   width: 220px;
   height: 38px;
+  cursor: pointer;
 }
 
 .sort-line {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-pricearea);
-  display: inline;
   grid-column: 2/-1;
   grid-row: 1/2;
   display: grid;
@@ -2309,7 +2370,7 @@
   width: 100px;
   height: 30px;
   background-color: var(--basic-red);
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   display: flex;
@@ -2373,7 +2434,7 @@
 
 .page-number a, .page-number-next a {
   color: var(--basic-black);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2381,7 +2442,7 @@
 
 .page-number-selected a {
   color: var(--basic-white);
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -2406,7 +2467,7 @@
 }
 
 .perforators-description h1 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -2417,7 +2478,7 @@
 }
 
 .perforators-description p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   width: 940px;
