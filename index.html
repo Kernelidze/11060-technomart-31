@@ -69,9 +69,10 @@
   <main class="container">
     <section class="offers">
       <ul class="offers-list">
-        <li>
+        <li class="new">
           <p class="offers-head">Материалы</p>
           <a class="offers-button" href="#">на любой вкус</a>
+          <div class="new-line">new</div>
         </li>
         <li>
           <p class="offers-head">Инструмент</p>
@@ -138,6 +139,7 @@
           <div class="redprice">
             <a class="catalog-button-price" href="#">25500 P.</a>
           </div>
+          <div class="new-line">new</div>
         </li>
         <li class="catalog-item new">
           <div class="over-catalog-variant">
@@ -154,6 +156,7 @@
           <div class="redprice">
             <a class="catalog-button-price" href="#">15500 P.</a>
           </div>
+          <div class="new-line">new</div>
         </li>
         <li class="catalog-item">
           <div class="over-catalog-variant">
@@ -170,6 +173,7 @@
           <div class="redprice">
             <a class="catalog-button-price" href="#">25500 P.</a>
           </div>
+          <div class="new-line">new</div>
         </li>
         <li class="catalog-item new">
           <div class="over-catalog-variant">
@@ -186,8 +190,10 @@
           <div class="redprice">
             <a class="catalog-button-price" href="#">12500 P.</a>
           </div>
+          <div class="new-line">new</div>
         </li>
       </ul>
+
       <div class="modal-cart visually-hidden">
        <button class="modal-button-close-cart" type="button"></button>
         <h3>Товар добавлен в корзину!</h3>
@@ -259,7 +265,6 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать
           ваши покупки приятными.</p>
         <div class="services-grid">
-          <div>
             <ul class="services-list">
               <li class="services-item-selected">
                 <a href="#">Доставка</a>
@@ -271,7 +276,6 @@
                 <a href="#">Кредит</a>
               </li>
             </ul>
-          </div>
           <div class="services-slider">
             <div class="services-delivery">
               <h2>Доставка</h2>
@@ -317,7 +321,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
         <a href="">
-          <img src="img/map.jpg" width="300" height="158" alt="Карта">
+          <img class="contacts-map-image" src="img/map.jpg" width="300" height="158" alt="Карта">
         </a>
         <div class="map-button">
           <a class="contacts-map-button" href="#">Заблудились? Напишите нам!</a>
@@ -366,7 +370,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </section>
-      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
+      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+        <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+      </p>
       <section class="footer-navigation-2">
         <ul class="footer-list-2">
           <li><a href="#">Материалы</a></li>
