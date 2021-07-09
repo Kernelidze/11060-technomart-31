@@ -12,7 +12,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -25,15 +25,10 @@
           </a>
         </div>
         <div class="upper-line-search">
-
-         <!--  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="search-form-input" type="text" name="search" placeholder="Поиск:">
-          </form> -->
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <input id="search-input" class="search-form-input" type="text" name="search" placeholder="Поиск:">
             <label class="search-input" for="search-input"></label>
           </form>
-
         </div>
         <div class="upper-line-bookmark">
           <a href="#">Закладки: 0</a>
@@ -201,7 +196,7 @@
       </ul>
 
       <div class="modal-cart visually-hidden">
-       <button class="modal-button-close-cart" type="button" aria-label="Закрыть окно корзины"></button>
+        <button class="modal-button-close-cart" type="button" aria-label="Закрыть окно корзины"></button>
         <h3>Товар добавлен в корзину!</h3>
         <div class="modal-cart-button-background">
           <div class="modal-cart-button-form">
@@ -271,17 +266,17 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать
           ваши покупки приятными.</p>
         <div class="services-grid">
-            <ul class="services-list">
-              <li class="services-item-selected">
-                <a href="#">Доставка</a>
-              </li>
-              <li class="services-item">
-                <a href="#">Гарантия</a>
-              </li>
-              <li class="services-item">
-                <a href="#">Кредит</a>
-              </li>
-            </ul>
+          <ul class="services-list">
+            <li class="services-item-selected">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="services-item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="services-item">
+              <a href="#">Кредит</a>
+            </li>
+          </ul>
           <div class="services-slider">
             <div class="services-delivery">
               <h2>Доставка</h2>
@@ -348,13 +343,16 @@
             <textarea id="modal-letter" name="letter" placeholder="В свободной форме"></textarea>
           </div>
           <div class="modal-button-background">
-              <button class="modal-button" type="submit">Отправить</button>
+            <button class="modal-button" type="submit">Отправить</button>
           </div>
           <button class="modal-button-close" type="button" aria-label="Закрыть форму с письмом"></button>
         </form>
       </div>
       <div class="modal-map-big visually-hidden">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="442   " allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          width="943" height="442   " allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         <button class="modal-button-close-map" aria-label="Закрыть карту" type="button"></button>
       </div>
     </section>
@@ -394,14 +392,16 @@
         <section class="footer-social">
           <ul class="footer-social-list">
             <li>
-              <a class="social-button" href="#" aria-label="Ссылка Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+              <a class="social-button" href="#" aria-label="Ссылка Вконтакте"><img src="img/icon-vk.svg" width="26"
+                  height="15" alt="Вконтакте"></a>
             </li>
             <li>
-              <a class="social-button" href="#" aria-label="Ссылка Фейсбук"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a>
+              <a class="social-button" href="#" aria-label="Ссылка Фейсбук"><img src="img/icon-fb.svg" width="12"
+                  height="22" alt="Фейсбук"></a>
             </li>
             <li>
-              <a class="social-button" href="#" aria-label="Ссылка Инстаграм"><img src="img/icon-insta.svg" width="21" height="21"
-                  alt="Инстаграм"></a>
+              <a class="social-button" href="#" aria-label="Ссылка Инстаграм"><img src="img/icon-insta.svg" width="21"
+                  height="21" alt="Инстаграм"></a>
             </li>
           </ul>
         </section>
