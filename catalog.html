@@ -12,7 +12,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -48,7 +49,7 @@
       </div>
       <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
       <div class="contacts-login-user">
-        <a href="#">Равшан Джамшутович</a>
+        <a class="contacts-login-user-a" href="#">Равшан Джамшутович</a>
         <a class="user-logout" href="#" aria-label="Логаут пользователя"></a>
       </div>
       <div class="my-cabinet">
@@ -166,7 +167,7 @@
       </section>
       <section class="sort-line">
         <p>Сортировка:</p>
-        <div class="sort-line-price">
+        <div class="sort-line-price sort-line-selected">
           <a href="#">По цене</a>
         </div>
         <div class="sort-line-type">
@@ -175,7 +176,7 @@
         <div class="sort-line-function">
           <a href="#">По функционалу</a>
         </div>
-        <div class="grow-up">
+        <div class="grow-up grow-up-selected">
           <a href="#" aria-label="Сортировка по возрастанию"></a>
         </div>
         <div class="grow-down">
@@ -441,6 +442,7 @@
       </section>
     </div>
   </footer>
+  <script src="blank.min.js"></script>
 </body>
 
 </html>

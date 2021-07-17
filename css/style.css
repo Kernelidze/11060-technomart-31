@@ -405,16 +405,16 @@
   color: var(--basic-greylight);
 }
 
-.contacts-login-user a {
+.contacts-login-user-a {
+  width: 200px;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
   color: var(--basic-black);
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 0 12px 50px;
 }
 
-.contacts-login-user a:hover {
+.contacts-login-user-a:hover {
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
@@ -434,7 +434,7 @@
   position: relative;
 }
 
-.contacts-login-user a::before {
+.contacts-login-user-a::before {
   position: absolute;
   content: url("../img/icon-user.svg");
   width: 20px;
@@ -450,16 +450,17 @@
   width: 20px;
   height: 17px;
   top: 3px;
-  right: 17px;
+  right: 8px;
   opacity: 0.3;
+  padding: 10px 10px;
 }
 
-.contacts-login-user a:hover::before,
+.contacts-login-user-a:hover::before,
 .user-logout:hover {
   opacity: 1;
 }
 
-.contacts-login-user a:active::before,
+.contacts-login-user-a:active::before,
 .user-logout:active,
 .contacts-login-user:focus {
   opacity: 0.3;
@@ -646,6 +647,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  display: grid;
 }
 
 .slider-1,
@@ -658,10 +660,16 @@
 
 .slider-1 {
   background-image: url("../img/workerperf.jpg");
+  z-index: 2;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
 }
 
 .slider-2 {
   background-image: url("../img/workerdrill.jpg");
+  z-index: 1;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
 }
 
 .slider h2 {
@@ -810,6 +818,10 @@
   height: 6px;
   border-radius: 100%;
   background-color: var(--basic-red);
+}
+
+.slider-index {
+  z-index: 0;
 }
 
 .catalog {
@@ -1503,6 +1515,8 @@
   box-sizing: border-box;
 }
 
+
+
 .modal-cart h3 {
   justify-self: center;
   align-self: center;
@@ -1735,6 +1749,14 @@
   border: none;
   width: 943px;
   height: 442px;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-show {
+  display: block;
 }
 
 .main-footer {
@@ -2138,19 +2160,6 @@
 }
 
 .filter-input-checkbox+label::before {
-  content: url("../img/checkbox-on.svg");
-  position: absolute;
-  left: -35px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-}
-
-.filter-input-checkbox+label:hover::before {
-  content: url("../img/checkbox-on-hover.svg");
-}
-
-.filter-input-checkbox:checked+label::before {
   content: url("../img/checkbox-off.svg");
   position: absolute;
   left: -35px;
@@ -2159,8 +2168,25 @@
   height: 16px;
 }
 
-.filter-input-checkbox:checked+label:hover::before {
+.filter-input-checkbox+label:hover::before {
   content: url("../img/checkbox-off-hover.svg");
+}
+
+.filter-input-checkbox:disabled+label {
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:checked+label::before {
+  content: url("../img/checkbox-on.svg");
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.filter-input-checkbox:checked+label:hover::before {
+  content: url("../img/checkbox-on-hover.svg");
 }
 
 .filter-power p {
@@ -2185,6 +2211,10 @@
   cursor: pointer;
   user-select: none;
   width: 50px;
+}
+
+.filter-power-input:disabled+label {
+  opacity: 0.3;
 }
 
 .filter-power-input+label::before {
@@ -2388,7 +2418,8 @@
   content: url("../img/grow-up-hover.svg");
 }
 
-.grow-up a:focus {
+.grow-up a:focus,
+.grow-up-selected a {
   content: url("../img/grow-up-active.svg");
 }
 
@@ -2410,7 +2441,8 @@
   content: url("../img/grow-down-hover.svg");
 }
 
-.grow-down a:focus {
+.grow-down a:focus,
+.grow-down-selected a {
   content: url("../img/grow-down-active.svg");
 }
 
@@ -2430,7 +2462,8 @@
 
 .sort-line-price a:focus,
 .sort-line-type a:focus,
-.sort-line-function a:focus {
+.sort-line-function a:focus,
+.sort-line-selected a {
   color: var(--basic-red);
   border: none;
 }

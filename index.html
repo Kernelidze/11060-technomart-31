@@ -12,7 +12,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -104,7 +105,7 @@
           <div class="slider-dots"></div>
           <div class="slider-dots-active"></div>
         </div>
-        <div class="slider-2 visually-hidden">
+        <div class="slider-2">
           <h2>Дрели</h2>
           <p>Соседям на радость!</p>
           <button class="slider-button-left" type="button" aria-label="Слайд влево"></button>
@@ -177,6 +178,18 @@
           <div class="new-line">new</div>
         </li>
         <li class="catalog-item new">
+          <div class="modal-cart modal-hidden">
+            <button class="modal-button-close-cart" type="button" aria-label="Закрыть окно корзины"></button>
+            <h3>Товар добавлен в корзину!</h3>
+            <div class="modal-cart-button-background">
+              <div class="modal-cart-button-form">
+                <a class="modal-cart-button" href="#">Оформить заказ</a>
+              </div>
+              <div class="modal-cart-button-form-next">
+                <a class="modal-cart-button-next" href="#">Продолжить покупки</a>
+              </div>
+            </div>
+          </div>
           <div class="over-catalog-variant">
             <div class="catalog-item-buy">
               <a class="item-buy-link" href="#">Купить</a>
@@ -195,7 +208,7 @@
         </li>
       </ul>
 
-      <div class="modal-cart visually-hidden">
+      <!-- <div class="modal-cart modal-hidden">
         <button class="modal-button-close-cart" type="button" aria-label="Закрыть окно корзины"></button>
         <h3>Товар добавлен в корзину!</h3>
         <div class="modal-cart-button-background">
@@ -206,7 +219,7 @@
             <a class="modal-cart-button-next" href="#">Продолжить покупки</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="manufacturers">
@@ -321,14 +334,14 @@
       <div class="contacts-map">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-        <a href="">
+        <a class="map-open" href="">
           <img class="contacts-map-image" src="img/map.jpg" width="300" height="158" alt="Карта">
         </a>
         <div class="map-button">
           <a class="contacts-map-button" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
-      <div class="modal visually-hidden">
+      <div class="modal modal-hidden">
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="modal-item-name">
             <label for="modal-name">Ваше имя:</label>
@@ -348,10 +361,10 @@
           <button class="modal-button-close" type="button" aria-label="Закрыть форму с письмом"></button>
         </form>
       </div>
-      <div class="modal-map-big visually-hidden">
+      <div class="modal-map-big modal-hidden">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-          width="943" height="442   " allowfullscreen
+          width="943" height="442" allowfullscreen
           title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         <button class="modal-button-close-map" aria-label="Закрыть карту" type="button"></button>
       </div>
@@ -414,6 +427,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
