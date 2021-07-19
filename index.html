@@ -12,8 +12,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -95,21 +94,21 @@
       </ul>
       <div class="slider">
         <div class="slider-1">
-          <h2>Перфораторы</h2>
-          <p>Настоящие мужские игрушки</p>
           <button class="slider-button-left" type="button" aria-label="Слайд влево"></button>
           <button class="slider-button-right" type="button" aria-label="Слайд вправо"></button>
+          <h2>Перфораторы</h2>
+          <p>Настоящие мужские игрушки</p>
           <div class="slider-button-style">
             <a class="slider-button" href="catalog.html">открыть каталог</a>
           </div>
           <div class="slider-dots"></div>
           <div class="slider-dots-active"></div>
         </div>
-        <div class="slider-2">
+        <div class="slider-2 visually-hidden">
+          <button class="slider-button-left2" type="button" aria-label="Слайд влево"></button>
+          <button class="slider-button-right2" type="button" aria-label="Слайд вправо"></button>
           <h2>Дрели</h2>
           <p>Соседям на радость!</p>
-          <button class="slider-button-left" type="button" aria-label="Слайд влево"></button>
-          <button class="slider-button-right" type="button" aria-label="Слайд вправо"></button>
           <div class="slider-button-style">
             <a class="slider-button" href="catalog.html">открыть каталог</a>
           </div>
@@ -178,18 +177,6 @@
           <div class="new-line">new</div>
         </li>
         <li class="catalog-item new">
-          <div class="modal-cart modal-hidden">
-            <button class="modal-button-close-cart" type="button" aria-label="Закрыть окно корзины"></button>
-            <h3>Товар добавлен в корзину!</h3>
-            <div class="modal-cart-button-background">
-              <div class="modal-cart-button-form">
-                <a class="modal-cart-button" href="#">Оформить заказ</a>
-              </div>
-              <div class="modal-cart-button-form-next">
-                <a class="modal-cart-button-next" href="#">Продолжить покупки</a>
-              </div>
-            </div>
-          </div>
           <div class="over-catalog-variant">
             <div class="catalog-item-buy">
               <a class="item-buy-link" href="#">Купить</a>
@@ -208,7 +195,7 @@
         </li>
       </ul>
 
-      <!-- <div class="modal-cart modal-hidden">
+      <div class="modal-cart modal-hidden">
         <button class="modal-button-close-cart" type="button" aria-label="Закрыть окно корзины"></button>
         <h3>Товар добавлен в корзину!</h3>
         <div class="modal-cart-button-background">
@@ -219,7 +206,7 @@
             <a class="modal-cart-button-next" href="#">Продолжить покупки</a>
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
 
     <section class="manufacturers">
@@ -280,13 +267,13 @@
           ваши покупки приятными.</p>
         <div class="services-grid">
           <ul class="services-list">
-            <li class="services-item-selected">
+            <li class="services-item-delivery services-selected">
               <a href="#">Доставка</a>
             </li>
-            <li class="services-item">
+            <li class="services-item-guarantee">
               <a href="#">Гарантия</a>
             </li>
-            <li class="services-item">
+            <li class="services-item-credit">
               <a href="#">Кредит</a>
             </li>
           </ul>
@@ -427,7 +414,7 @@
       </section>
     </div>
   </footer>
-  <script src="js/map.js"></script>
+  <script src="js/buttons.min.js"></script>
 </body>
 
 </html>
