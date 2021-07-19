@@ -721,7 +721,7 @@
 
 .slider-1 .slider-button-style {
   width: 192px;
-  height: 38px;
+  min-height: 38px;
   padding: 0;
   margin: 0;
   background-color: var(--basic-red);
@@ -735,7 +735,7 @@
 
 .slider-2 .slider-button-style {
   width: 192px;
-  height: 38px;
+  min-height: 38px;
   padding: 0;
   margin: 0;
   background-color: var(--basic-red);
@@ -831,7 +831,7 @@
 .catalog-line {
   display: grid;
   grid-template-columns: 1fr auto;
-  height: 89px;
+  min-height: 89px;
   align-content: center;
   background-color: var(--basic-beige);
 }
@@ -855,7 +855,7 @@
 
 .catalog-button-style {
   width: 192px;
-  height: 38px;
+  min-height: 38px;
   background-color: var(--basic-red);
   margin-right: 14px;
   display: grid;
@@ -876,7 +876,7 @@
 
 .catalog-item {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   border: 1px solid var(--basic-border-color);
   box-sizing: border-box;
   background-color: var(--basic-white);
@@ -1077,7 +1077,7 @@
 .line-manufacturers {
   display: grid;
   grid-template-columns: 1fr auto;
-  height: 89px;
+  min-height: 89px;
   align-items: center;
   background-color: var(--basic-beige);
 }
@@ -1091,7 +1091,7 @@
 
 .manufacturers-button-style {
   width: 192px;
-  height: 38px;
+  min-height: 38px;
   background-color: var(--basic-red);
   margin-right: 14px;
   display: grid;
@@ -1428,7 +1428,7 @@
 
 .company-button {
   width: 220px;
-  height: 38px;
+  min-height: 38px;
   background-color: var(--basic-red);
   display: flex;
   flex-wrap: nowrap;
@@ -1476,7 +1476,7 @@
 
 .map-button {
   width: 300px;
-  height: 38px;
+  min-height: 38px;
   background-color: var(--basic-red);
   margin-top: 18px;
   margin-left: 2px;
@@ -1816,7 +1816,7 @@
 }
 
 .footer-list-1 li {
-  margin: 0 29px;
+  margin: 0 0 0 58px;
 }
 
 .footer-list-1 li:last-child {
@@ -1838,23 +1838,11 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 27px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .footer-list-2 li {
-  margin: 0 29px;
-}
-
-.footer-list-2 li:first-child {
-  margin-left: 80px;
-}
-
-.footer-list-2 li:nth-child(3) {
-  margin-left: 31px;
-}
-
-.footer-list-2 li:last-child {
-  margin-right: 0;
+  margin: 0 0 0 58px;
 }
 
 .footer-navigation-2 a {
@@ -2382,8 +2370,8 @@
   background-color: var(--basic-pricearea);
   grid-column: 2/-1;
   grid-row: 1/2;
-  display: grid;
-  grid-template-columns: min-content auto auto auto 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sort-line p {
